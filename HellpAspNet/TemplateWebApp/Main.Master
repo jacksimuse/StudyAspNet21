@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TemplateWebApp.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>템플릿웹</title>
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="Content/main.css" />
+    <link rel="stylesheet" href="Content/bootstrap.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                        data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">마스터페이지</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/">홈</a></li>
+                        <li><a runat="server" href="~/About.aspx">정보</a></li>
+                        <li><a runat="server" href="~/Contact.aspx">연락처</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a runat="server" href="~/Account/Register">등록</a></li>
+                        <li><a runat="server" href="~/Account/Login">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+        </div>
+        <footer class="text-center">
+            <p>Copyright PKNU <%= DateTime.Now.Year %> &copy;, All rights reserved.</p>
+        </footer>
+    </form>
+</body>
+</html>

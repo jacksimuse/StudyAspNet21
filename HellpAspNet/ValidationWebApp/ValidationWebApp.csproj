@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C2DF9DF5-7A6A-4188-8CF5-568A488C8FE8}</ProjectGuid>
+    <ProjectGuid>{C5F10F82-8587-4BE3-8AB2-0B61BD6A893C}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WebApp</RootNamespace>
-    <AssemblyName>WebApp</AssemblyName>
+    <RootNamespace>ValidationWebApp</RootNamespace>
+    <AssemblyName>ValidationWebApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44386</IISExpressSSLPort>
+    <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=3.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.6.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -67,117 +70,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\main.css" />
-    <Content Include="FrmAppSession.aspx" />
-    <Content Include="FrmButton.aspx" />
-    <Content Include="FrmControls.aspx" />
-    <Content Include="FrmFileUpload.aspx" />
-    <Content Include="FrmPageLoad.aspx" />
-    <Content Include="FrmRequest.aspx" />
-    <Content Include="FrmResponseBuffer.aspx" />
-    <Content Include="FrmResponseWrite.aspx" />
-    <Content Include="FrmRichControl.aspx" />
-    <Content Include="FrmServer.aspx" />
-    <Content Include="FrmStandardControl.aspx" />
+    <Content Include="Copyright.ascx" />
+    <Content Include="FrmInputValid.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="images\btn_post.gif" />
-    <Content Include="images\KakaoTalk_20210412_102604119.png" />
-    <Content Include="images\KakaoTalk_20210412_102604119_01.png" />
-    <Content Include="Index.aspx" />
+    <None Include="Scripts\jquery-3.6.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.6.0.js" />
+    <Content Include="Scripts\jquery-3.6.0.min.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.js" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmAppSession.aspx.cs">
-      <DependentUpon>FrmAppSession.aspx</DependentUpon>
+    <Compile Include="Copyright.ascx.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmAppSession.aspx.designer.cs">
-      <DependentUpon>FrmAppSession.aspx</DependentUpon>
+    <Compile Include="Copyright.ascx.designer.cs">
+      <DependentUpon>Copyright.ascx</DependentUpon>
     </Compile>
-    <Compile Include="FrmButton.aspx.cs">
-      <DependentUpon>FrmButton.aspx</DependentUpon>
+    <Compile Include="FrmInputValid.aspx.cs">
+      <DependentUpon>FrmInputValid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmButton.aspx.designer.cs">
-      <DependentUpon>FrmButton.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmControls.aspx.cs">
-      <DependentUpon>FrmControls.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmControls.aspx.designer.cs">
-      <DependentUpon>FrmControls.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFileUpload.aspx.cs">
-      <DependentUpon>FrmFileUpload.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmFileUpload.aspx.designer.cs">
-      <DependentUpon>FrmFileUpload.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPageLoad.aspx.cs">
-      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmPageLoad.aspx.designer.cs">
-      <DependentUpon>FrmPageLoad.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRequest.aspx.cs">
-      <DependentUpon>FrmRequest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmRequest.aspx.designer.cs">
-      <DependentUpon>FrmRequest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmResponseBuffer.aspx.cs">
-      <DependentUpon>FrmResponseBuffer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmResponseBuffer.aspx.designer.cs">
-      <DependentUpon>FrmResponseBuffer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmResponseWrite.aspx.cs">
-      <DependentUpon>FrmResponseWrite.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmResponseWrite.aspx.designer.cs">
-      <DependentUpon>FrmResponseWrite.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmRichControl.aspx.cs">
-      <DependentUpon>FrmRichControl.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmRichControl.aspx.designer.cs">
-      <DependentUpon>FrmRichControl.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmServer.aspx.cs">
-      <DependentUpon>FrmServer.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmServer.aspx.designer.cs">
-      <DependentUpon>FrmServer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmStandardControl.aspx.cs">
-      <DependentUpon>FrmStandardControl.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FrmStandardControl.aspx.designer.cs">
-      <DependentUpon>FrmStandardControl.aspx</DependentUpon>
+    <Compile Include="FrmInputValid.aspx.designer.cs">
+      <DependentUpon>FrmInputValid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.6.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -187,7 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Files\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
@@ -203,9 +128,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2427</DevelopmentServerPort>
+          <DevelopmentServerPort>6092</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44386/</IISUrl>
+          <IISUrl>http://localhost:6092/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
