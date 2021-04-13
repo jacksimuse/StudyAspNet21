@@ -7,21 +7,12 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace TemplateWebApp
+namespace StateMngWebApp
 {
 
 
-    public partial class Main
+    public partial class FrmStateMng
     {
-
-        /// <summary>
-        /// head 컨트롤입니다.
-        /// </summary>
-        /// <remarks>
-        /// 자동 생성 필드입니다.
-        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 컨트롤입니다.
@@ -33,30 +24,57 @@ namespace TemplateWebApp
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// MainContent 컨트롤입니다.
+        /// TxtApplication 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox TxtApplication;
 
         /// <summary>
-        /// SmpMain 컨트롤입니다.
+        /// TxtSession 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapPath SmpMain;
+        protected global::System.Web.UI.WebControls.TextBox TxtSession;
 
         /// <summary>
-        /// MnuMain 컨트롤입니다.
+        /// TxtCache 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu MnuMain;
+        protected global::System.Web.UI.WebControls.TextBox TxtCache;
+
+        /// <summary>
+        /// TxtCookies 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtCookies;
+
+        /// <summary>
+        /// TxtViewState 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtViewState;
+
+        /// <summary>
+        /// BtnSave 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSave;
     }
 }

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="메인페이지"  description="메인페이지">
+    <siteMapNode url="About.aspx" title="정보"  description="정보페이지" />
+    <siteMapNode url="Contact.aspx" title="연락처"  description="연락처페이지" />
+  </siteMapNode>
+</siteMap>

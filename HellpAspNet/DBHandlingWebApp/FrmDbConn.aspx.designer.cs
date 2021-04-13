@@ -7,21 +7,12 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace TemplateWebApp
+namespace DBHandlingWebApp
 {
 
 
-    public partial class Main
+    public partial class FrmDbConn
     {
-
-        /// <summary>
-        /// head 컨트롤입니다.
-        /// </summary>
-        /// <remarks>
-        /// 자동 생성 필드입니다.
-        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 컨트롤입니다.
@@ -33,30 +24,21 @@ namespace TemplateWebApp
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// MainContent 컨트롤입니다.
+        /// BtnConn 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button BtnConn;
 
         /// <summary>
-        /// SmpMain 컨트롤입니다.
+        /// LblResult 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapPath SmpMain;
-
-        /// <summary>
-        /// MnuMain 컨트롤입니다.
-        /// </summary>
-        /// <remarks>
-        /// 자동 생성 필드입니다.
-        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu MnuMain;
+        protected global::System.Web.UI.WebControls.Label LblResult;
     }
 }

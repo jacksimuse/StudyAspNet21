@@ -34,7 +34,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12" style="background-color: cadetblue">
-                    <cpy:Copyright runat="server" />
+                    <cpy:Copyright runat="server" ID="UcCopyright"/>
                 </div>
             </div>
         </div>

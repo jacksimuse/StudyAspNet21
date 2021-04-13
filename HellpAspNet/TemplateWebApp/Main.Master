@@ -43,6 +43,14 @@
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            <asp:SiteMapPath ID="SmpMain" runat="server"></asp:SiteMapPath>
+            <asp:Menu ID="MnuMain" runat="server" Orientation="Vertical">
+                <Items>
+                    <asp:MenuItem Text="홈" Value="Home" NavigateUrl="~/"></asp:MenuItem>
+                    <asp:MenuItem Text="정보" Value="About" NavigateUrl="~/About.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="연락처" Value="Contact" NavigateUrl="~/Contact.aspx"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
             <hr />
         </div>
         <footer class="text-center">
