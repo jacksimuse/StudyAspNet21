@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.78\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -69,6 +72,9 @@
   <ItemGroup>
     <Content Include="FrmDataReader.aspx" />
     <Content Include="FrmDbConn.aspx" />
+    <Content Include="FrmMemoList.aspx" />
+    <Content Include="FrmMemoView.aspx" />
+    <Content Include="FrmMemoWrite.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,9 +93,33 @@
     <Compile Include="FrmDbConn.aspx.designer.cs">
       <DependentUpon>FrmDbConn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmMemoList.aspx.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMemoList.aspx.designer.cs">
+      <DependentUpon>FrmMemoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMemoView.aspx.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMemoView.aspx.designer.cs">
+      <DependentUpon>FrmMemoView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMemoWrite.aspx.cs">
+      <DependentUpon>FrmMemoWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmMemoWrite.aspx.designer.cs">
+      <DependentUpon>FrmMemoWrite.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MaximRepository.cs" />
+    <Compile Include="Models\Maxims.cs" />
+    <Compile Include="Models\Memos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -103,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
