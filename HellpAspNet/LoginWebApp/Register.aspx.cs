@@ -22,9 +22,9 @@ namespace LoginWebApp
 
             if (result == 1)
             {
-                //var strScript = @"<script>alert('가입완료');location.href='Default.aspx';</script>";
-                //Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "alertJS", strScript);
-                Response.Redirect("Default.aspx");
+                var strScript = @"<script>alert('가입완료');location.href='Default.aspx';</script>";
+                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "alertJS", strScript);
+                //Response.Redirect("Default.aspx");
             }
         }
     }

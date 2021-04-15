@@ -34,7 +34,7 @@ namespace LoginWebApp.Models
         {
             bool result = false;
 
-            SqlCommand cmd = new SqlCommand("SELECT * FROM WHERE UserID = @UserID AND Password= @Password", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Users WHERE UserID = @UserID AND Password= @Password", conn);
             cmd.CommandType = System.Data.CommandType.Text;
             cmd.Parameters.AddWithValue("@UserId", userId);
             cmd.Parameters.AddWithValue("@Password", password);

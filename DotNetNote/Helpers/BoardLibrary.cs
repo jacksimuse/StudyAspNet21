@@ -1,10 +1,12 @@
-﻿using System;
+﻿using NLog;
+using System;
 using System.IO;
 
 namespace Helpers
 {
     public class BoardLibrary
     {
+        public static readonly Logger LOGGER = LogManager.GetCurrentClassLogger();
         #region 각 글의 Step별 들여쓰기 처리
         /// <summary>
         /// 각 글의 Step별 들여쓰기 처리
