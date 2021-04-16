@@ -121,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Board\BoardCommentDelete.aspx" />
+    <Content Include="Board\BoardDelete.aspx" />
+    <Content Include="Board\BoardDown.aspx" />
     <Content Include="Board\BoardList.aspx" />
     <Content Include="Board\BoardView.aspx" />
     <Content Include="Board\BoardWrite.aspx" />
@@ -130,7 +133,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Controls\SearchControl.ascx" />
     <Content Include="Content\Site.css" />
+    <Content Include="Controls\CommentControl.ascx" />
     <Content Include="Controls\PagingControl.ascx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -310,6 +315,27 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Board\BoardCommentDelete.aspx.cs">
+      <DependentUpon>BoardCommentDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\BoardCommentDelete.aspx.designer.cs">
+      <DependentUpon>BoardCommentDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\BoardDelete.aspx.cs">
+      <DependentUpon>BoardDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\BoardDelete.aspx.designer.cs">
+      <DependentUpon>BoardDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Board\BoardDown.aspx.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Board\BoardDown.aspx.designer.cs">
+      <DependentUpon>BoardDown.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Board\BoardList.aspx.cs">
       <DependentUpon>BoardList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -344,6 +370,20 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchControl.ascx.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SearchControl.ascx.designer.cs">
+      <DependentUpon>SearchControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CommentControl.ascx.cs">
+      <DependentUpon>CommentControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CommentControl.ascx.designer.cs">
+      <DependentUpon>CommentControl.ascx</DependentUpon>
     </Compile>
     <Compile Include="Controls\PagingControl.ascx.cs">
       <DependentUpon>PagingControl.ascx</DependentUpon>

@@ -15,8 +15,8 @@ namespace DotNetNote.Board
         protected void Page_Load(object sender, EventArgs e)
         {
             lnkDelete.NavigateUrl = $"BoardDelete.aspx?Id={Request["Id"]}";
-            lnkModify.NavigateUrl = $"BoardModify.aspx?Id={Request["Id"]}";
-            lnkReply.NavigateUrl = $"BoardReply.aspx?Id={Request["Id"]}";
+            lnkModify.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Edit";
+            lnkReply.NavigateUrl = $"BoardWrite.aspx?Id={Request["Id"]}&Mode=Reply";
 
             _Id = Request["Id"];
             if (_Id == null) Response.Redirect("BoardList.aspx");
@@ -55,6 +55,15 @@ namespace DotNetNote.Board
             lblHomepage.Text = $"<a href='{note.Homepage}' target='_blank'>{note.Homepage}</a>";
             lblPostDate.Text = note.PostDate.ToString();
             lblPostIP.Text = note.PostIp;
+
+            if (note.FileName.Length > 1)
+            {
+                lblFile.Text = $"{note.FileName} / 다은로드 {note.DownCount}";
+            }
+            else
+            {
+                lblFile.Text = "(None)";
+            }
         }
     }
 }

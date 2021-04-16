@@ -11,34 +11,52 @@ namespace DotNetNote.Board
 {
 
 
-    public partial class BoardList
+    public partial class BoardCommentDelete
     {
 
         /// <summary>
-        /// LblTotalRecord 컨트롤입니다.
+        /// txtPassword 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal LblTotalRecord;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// GrvNotes 컨트롤입니다.
+        /// btnCommentDelete 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GrvNotes;
+        protected global::System.Web.UI.WebControls.Button btnCommentDelete;
 
         /// <summary>
-        /// PagingControl 컨트롤입니다.
+        /// valPassword 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::DotNetNote.Controls.PagingControl PagingControl;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator valPassword;
+
+        /// <summary>
+        /// valSummary 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary valSummary;
+
+        /// <summary>
+        /// lblError 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblError;
     }
 }

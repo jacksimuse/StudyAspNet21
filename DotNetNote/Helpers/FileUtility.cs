@@ -2,7 +2,7 @@
 
 namespace Helpers
 {
-    class FileUtility
+    public class FileUtility
     {
         #region 중복된 파일명 뒤에 번호 붙이는 메서드 : GetFileNameWithNumbering
         /// <summary>

@@ -100,7 +100,7 @@ namespace Helpers
                       Convert.ToDateTime(date).ToString("yyyy-MM-dd");
                     if (strPostDate == DateTime.Now.ToString("yyyy-MM-dd"))
                     {
-                        return Convert.ToDateTime(date).ToString("hh:mm:ss");
+                        return Convert.ToDateTime(date).ToString("HH:mm:ss");
                     }
                     else
                     {
@@ -172,7 +172,7 @@ namespace Helpers
         {
             if (strFileName.Length > 0)
             {
-                return "<a href=\"/DotNetNote/BoardDown.aspx?Id="
+                return "<a href=\"BoardDown.aspx?Id="
                     + id.ToString() + "\">"
                     + DownloadType(strFileName, strFileName + "("
                     + ConvertToFileSize(Convert.ToInt32(strFileSize)) + ")")
