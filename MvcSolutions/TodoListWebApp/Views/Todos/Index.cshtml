@@ -1,0 +1,59 @@
+﻿@model IEnumerable<TodoListWebApp.Models.Todo>
+
+@{
+    ViewData["Title"] = "할일 리스트";
+}
+
+<h2>할일 리스트</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">할일등록</a>
+</p>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Id)
+			</th>
+			<th>
+				제목 @* @Html.DisplayNameFor(model => model.Title)*@
+			</th>
+			<th>
+				생성일 @*@Html.DisplayNameFor(model => model.CreationDate)*@
+			</th>
+			<th>
+				완료 @*@Html.DisplayNameFor(model => model.IsDone)*@
+			</th>
+			<th></th>
+		</tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+		<tr>
+			<td>
+				@Html.DisplayFor(modelItem => item.Id)
+			</td>
+			<td>
+				@if (item.IsDone)
+				{
+					<s>@item.Title</s>
+				}
+				else
+				{
+					<span>@item.Title</span>
+				}
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.CreationDate)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => item.IsDone)
+			</td>
+			<td>
+				<a asp-action="Edit" asp-route-id="@item.Id">변경</a> |
+				<a asp-action="Done" asp-route-id="@item.Id">완료</a>
+			</td>
+		</tr>
+}
+    </tbody>
+</table>
