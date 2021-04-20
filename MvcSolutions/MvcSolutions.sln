@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicMvcWebApp", "BasicMvcWebApp\BasicMvcWebApp.csproj", "{9D6C10F8-EF51-4977-A1C6-AAACC269D411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbWebApp", "DbWebApp\DbWebApp.csproj", "{169C0059-01E6-4F6C-961D-35110B88059F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbWebApp", "DbWebApp\DbWebApp.csproj", "{169C0059-01E6-4F6C-961D-35110B88059F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MvcWebLab_Database", "MvcWebLab_Database\MvcWebLab_Database.sqlproj", "{261CD177-D945-4632-97E2-4BA2C8AE0C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListWebApp", "TodoListWebApp\TodoListWebApp.csproj", "{C4C32839-C015-4FA1-A266-F01448D8A010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoListWebApp", "TodoListWebApp\TodoListWebApp.csproj", "{C4C32839-C015-4FA1-A266-F01448D8A010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApiTestApp", "RestApiTestApp\RestApiTestApp.csproj", "{6F7B6478-ED0F-4065-9A98-2B810EDA7B02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPortpolio", "MyPortpolio\MyPortpolio.csproj", "{7AD795C4-08CD-437A-8D01-932F67801A22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,14 @@ Global
 		{C4C32839-C015-4FA1-A266-F01448D8A010}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4C32839-C015-4FA1-A266-F01448D8A010}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4C32839-C015-4FA1-A266-F01448D8A010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7B6478-ED0F-4065-9A98-2B810EDA7B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7B6478-ED0F-4065-9A98-2B810EDA7B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7B6478-ED0F-4065-9A98-2B810EDA7B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7B6478-ED0F-4065-9A98-2B810EDA7B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD795C4-08CD-437A-8D01-932F67801A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD795C4-08CD-437A-8D01-932F67801A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD795C4-08CD-437A-8D01-932F67801A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD795C4-08CD-437A-8D01-932F67801A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
