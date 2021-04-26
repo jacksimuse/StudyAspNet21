@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>MvcWebLab_Database</Name>
+    <Name>TotalDatabase</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{261cd177-d945-4632-97e2-4ba2c8ae0c0c}</ProjectGuid>
@@ -66,5 +66,9 @@
     <Build Include="dbo\Tables\Rooms.sql" />
     <Build Include="dbo\Tables\Speakers.sql" />
     <Build Include="dbo\Tables\Todos.sql" />
+    <Build Include="dbo\Tables\Account.sql" />
+    <Build Include="dbo\Tables\Boards.sql" />
+    <Build Include="dbo\Tables\Contact.sql" />
+    <Build Include="dbo\Tables\Manages.sql" />
   </ItemGroup>
 </Project>

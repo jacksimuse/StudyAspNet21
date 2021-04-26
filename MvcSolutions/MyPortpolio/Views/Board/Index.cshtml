@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MyPortpolio.Models.Board>
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+<div class="col-lg col-md ml-auto mr-auto">
+	<div class="card card-login">
+		<div class="section section-contacts" style="padding: 40px 0;">
+			<div class="row">
+				<div class="col-md-11 ml-auto mr-auto">
+					<h3 class="text-center" style="font-weight:bold; color:black; margin-top: 0px">Board</h3>
+					<p>
+						<a asp-action="Create" class="btn btn-primary">글쓰기</a>
+					</p>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>등록일</th>
+								<th>조회수</th>
+								<th>기능</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var item in Model)
+							{
+							<tr>
+								<td>@Html.DisplayFor(modelItem => item.Id)</td>
+								<td><a asp-action="Details" asp-route-Id="@item.Id">
+										@Html.DisplayFor(modelItem => item.Subject)
+									</a>
+								</td>
+								<td>@Html.DisplayFor(modelItem => item.Writer)</td>
+								<td>@Html.DisplayFor(modelItem => item.RegDate)</td>
+								<td>@Html.DisplayFor(modelItem => item.ReadCount)</td>
+								<td>
+									<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">수정</a>&nbsp;
+									<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">삭제</a>
+								</td>
+							</tr>
+							}
+						</tbody>
+					</table>
+
+					@*<div class="pull-center">
+						@Html.PagedListPager(IPagedList)Model,
+							page => Url.Action("Index", new {page}),
+							new PagedListRenderOptionsBase {
+								LIElementClasses = new string[] {"page-Item"},
+								PageClasses = new string[] {"page-link"},
+								Display = PagedListDisplayMode.IfNeeded
+							})
+					</div>*@
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+

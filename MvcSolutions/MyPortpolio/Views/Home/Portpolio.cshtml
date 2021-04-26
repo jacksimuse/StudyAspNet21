@@ -1,8 +1,74 @@
-﻿
-@{
-    ViewData["Title"] = "Portpolio";
-    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+﻿@{
+	ViewData["Title"] = "Portpolio";
+	Layout = "~/Views/Shared/_ProfileLayout.cshtml";
 }
-
-<h1>Portpolio</h1>
+<div class="row">
+	<div class="col-md-8 ml-auto mr-auto text-center">
+		<h2 class="title">Portpolio</h2>
+		<h5 class="description">작업했던 포트폴리오들 입니다.</h5>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-6 ml-auto mr-auto">
+		<div class="profile-tabs">
+			<ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
+						<i class="material-icons">camera</i> Studio
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#works" role="tab" data-toggle="tab">
+						<i class="material-icons">palette</i> Work
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
+						<i class="material-icons">favorite</i> Favorite
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="tab-content tab-space">
+	<div class="tab-pane active text-center gallery" id="studio">
+		<div class="row">
+			<div class="col-md-3 ml-auto">
+				<img src="~/assets/img/examples/studio-1.jpg" class="rounded">
+				<img src="~/assets/img/examples/studio-2.jpg" class="rounded">
+			</div>
+			<div class="col-md-3 mr-auto">
+				<img src="~/assets/img/examples/studio-5.jpg" class="rounded">
+				<img src="~/assets/img/examples/studio-4.jpg" class="rounded">
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane text-center gallery" id="works">
+		<div class="row">
+			<div class="col-md-3 ml-auto">
+				<img src="~/assets/img/examples/olu-eletu.jpg" class="rounded">
+				<img src="~/assets/img/examples/clem-onojeghuo.jpg" class="rounded">
+				<img src="~/assets/img/examples/cynthia-del-rio.jpg" class="rounded">
+			</div>
+			<div class="col-md-3 mr-auto">
+				<img src="~/assets/img/examples/mariya-georgieva.jpg" class="rounded">
+				<img src="~/assets/img/examples/clem-onojegaw.jpg" class="rounded">
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane text-center gallery" id="favorite">
+		<div class="row">
+			<div class="col-md-3 ml-auto">
+				<img src="~/assets/img/examples/mariya-georgieva.jpg" class="rounded">
+				<img src="~/assets/img/examples/studio-3.jpg" class="rounded">
+			</div>
+			<div class="col-md-3 mr-auto">
+				<img src="~/assets/img/examples/clem-onojeghuo.jpg" class="rounded">
+				<img src="~/assets/img/examples/olu-eletu.jpg" class="rounded">
+				<img src="~/assets/img/examples/studio-1.jpg" class="rounded">
+			</div>
+		</div>
+	</div>
+</div>
 

@@ -1,0 +1,48 @@
+﻿@model MyPortpolio.Models.Board
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="col-lg col-md ml-auto mr-auto">
+	<div class="card card-login">
+		<div class="section section-contacts">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto">
+					<h3 class="text-center title" style="color:black; vertical-align:top">Board</h3>
+					<form asp-action="Create">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<div class="form-group">
+							<label asp-for="Subject" class="control-label"></label>
+							<input asp-for="Subject" class="form-control" />
+							<span asp-validation-for="Subject" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Writer" class="control-label"></label>
+							<input asp-for="Writer" class="form-control" />
+							<span asp-validation-for="Writer" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Contents" class="control-label"></label>
+							<textarea asp-for="Contents" class="form-control" rows="10"></textarea>
+							<script>
+                                ClassicEditor
+                                    .create(document.querySelector('#EditorContents'))
+                                    .catch(error => {
+                                        console.error(error);
+                                    });
+							</script>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Create" class="btn btn-primary" />&nbsp;
+							<a asp-action="Index" class="btn btn-secondary">List</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

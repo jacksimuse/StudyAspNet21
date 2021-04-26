@@ -1,0 +1,55 @@
+﻿@model MyPortpolio.Models.Manage
+@{
+	ViewData["Title"] = "Edit";
+	Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<script src="~/plugin/ckeditor_4.16.0_standard/ckeditor/ckeditor.js"></script>
+<div class="col-lg col-md ml-auto mr-auto">
+	<div class="card card-login">
+		<div class="section section-contacts" style="padding: 40px 0;">
+			<div class="row">
+				<div class="col-md-11 ml-auto mr-auto">
+					<h3 class="text-center" style="font-weight: bold; color: black; margin-top: 0px">Manage</h3>
+					<form asp-action="Edit">
+						<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						<input type="hidden" asp-for="Id" />
+						<div class="form-group">
+							<label asp-for="Cate" class="control-label">구분</label>
+							<select asp-for="Cate" class="form-control">
+								<option value="">선택</option>
+								<option value="Index">Index</option>
+								<option value="Profile">Profile</option>
+								<option value="Portpolio">Portpolio</option>
+							</select>
+							<span asp-validation-for="Cate" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Subject" class="control-label">제목</label>
+							<input asp-for="Subject" class="form-control" />
+							<span asp-validation-for="Subject" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Contents" class="control-label">내용</label>
+							<textarea asp-for="Contents" id="EditorContents" class="form-control" rows="30"></textarea>
+							<script>
+                                var editor = CKEDITOR.replace("EditorContents", {
+                                    allowedContent: true,
+                                    extraAllowedContent: 'a i span div',
+                                });
+							</script>
+							<span asp-validation-for="Contents" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="RegDate" class="control-label">등록일</label>
+							<input asp-for="RegDate" class="form-control" readonly />
+						</div>
+						<div class="form-group">
+							<input type="submit" value="저장" class="btn btn-primary" />&nbsp;
+							<a asp-action="Index" class="btn btn-success">리스트</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

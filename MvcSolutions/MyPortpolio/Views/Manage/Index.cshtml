@@ -1,0 +1,47 @@
+﻿@model IEnumerable<MyPortpolio.Models.Manage>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<div class="col-lg col-md ml-auto mr-auto">
+	<div class="card card-login">
+		<div class="section section-contacts" style="padding: 40px 0;">
+			<div class="row">
+				<div class="col-md-11 ml-auto mr-auto">
+					<h3 class="text-center" style="font-weight: bold; color: black; margin-top: 0px">화면관리</h3>
+					<p>
+						<a asp-action="Create" class="btn btn-primary">글쓰기</a>
+					</p>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>@Html.DisplayNameFor(model => model.Cate)</th>
+								<th>@Html.DisplayNameFor(model => model.Subject)</th>
+								<th>@Html.DisplayNameFor(model => model.RegDate)</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach (var item in Model)
+							{
+								<tr>
+									<td>@Html.DisplayFor(modelItem => item.Cate)</td>
+									<td>
+										<a asp-action="Details" asp-route-id="@item.Id">
+											@Html.DisplayFor(modelItem => item.Subject)
+										</a>
+									</td>
+									<td>@Html.DisplayFor(modelItem => item.RegDate)</td>
+									<td>
+										<a asp-action="Edit" asp-route-id="@item.Id">Edit</a>&nbsp;
+										<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+									</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

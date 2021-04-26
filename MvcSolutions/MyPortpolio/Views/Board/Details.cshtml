@@ -1,0 +1,56 @@
+﻿@model MyPortpolio.Models.Board
+
+@{
+	ViewData["Title"] = "Details";
+	Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div class="col-lg col-md ml-auto mr-auto">
+	<div class="card card-login">
+		<div class="section section-contacts">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto">
+					<h3 class="text-center title" style="color:black; vertical-align:top">Board</h3>
+					<dl class="row">
+						<dt class="col-sm-2">
+							@Html.DisplayNameFor(model => model.Subject)
+						</dt>
+						<dd class="col-sm-10">
+							@Html.DisplayFor(model => model.Subject)
+						</dd>
+						<dt class="col-sm-2">
+							@Html.DisplayNameFor(model => model.Contents)
+						</dt>
+						<dd class="col-sm-10">
+							@Html.DisplayFor(model => model.Contents)
+						</dd>
+						<dt class="col-sm-2">
+							@Html.DisplayNameFor(model => model.Writer)
+						</dt>
+						<dd class="col-sm-10">
+							@Html.DisplayFor(model => model.Writer)
+						</dd>
+						<dt class="col-sm-2">
+							@Html.DisplayNameFor(model => model.RegDate)
+						</dt>
+						<dd class="col-sm-10">
+							@Html.DisplayFor(model => model.RegDate)
+						</dd>
+						<dt class="col-sm-2">
+							@Html.DisplayNameFor(model => model.ReadCount)
+						</dt>
+						<dd class="col-sm-10">
+							@Html.DisplayFor(model => model.ReadCount)
+						</dd>
+					</dl>
+					<div>
+						<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">수정</a> |
+						<a asp-action="Index" class="btn btn-secondary">리스트</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
